@@ -5,12 +5,10 @@
 翻轉螢幕UI適應
 
 # Demo
-![alt text](https://raw.githubusercontent.com/dada79119/cmoney_swift_interview/master/resource/p-1.png)
-![alt text](https://raw.githubusercontent.com/dada79119/cmoney_swift_interview/master/resource/p-2.png)
-![alt text](https://raw.githubusercontent.com/dada79119/cmoney_swift_interview/master/resource/p-3.png)
-![alt text](https://raw.githubusercontent.com/dada79119/cmoney_swift_interview/master/resource/l-1.png)
-![alt text](https://raw.githubusercontent.com/dada79119/cmoney_swift_interview/master/resource/l-2.png)
-![alt text](https://raw.githubusercontent.com/dada79119/cmoney_swift_interview/master/resource/l-3.png)
+直向
+![alt text](https://raw.githubusercontent.com/dada79119/cmoney_swift_interview/master/resource/p.png)
+橫向
+![alt text](https://raw.githubusercontent.com/dada79119/cmoney_swift_interview/master/resource/l.png)
 
 
 
