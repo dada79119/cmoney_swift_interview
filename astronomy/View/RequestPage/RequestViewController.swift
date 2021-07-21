@@ -11,6 +11,9 @@ class RequestViewController: BaseUIViewController, UICollectionViewDelegate, UIC
     
     var dataList: [AstronomyModel] = []
     func setUI() {
+        for view in self.view.subviews{
+            view.removeFromSuperview()
+        }
         // 取得螢幕的尺寸
         let fullScreenSize: CGSize =
           UIScreen.main.bounds.size
@@ -59,6 +62,11 @@ class RequestViewController: BaseUIViewController, UICollectionViewDelegate, UIC
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        self.setUI()
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

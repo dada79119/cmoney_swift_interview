@@ -32,6 +32,11 @@ class ViewController: BaseUIViewController {
                     let decodedData = try JSONDecoder().decode([AstronomyModel].self,
                                                             from: data)
                     self.jsonData = decodedData
+                    DispatchQueue.main.async(execute: {
+                        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RequestViewController") as! RequestViewController
+                        vc.dataList = self.jsonData
+                        self.navigationController?.pushViewController(vc, animated: true)
+                    })
                 } catch {
                     print("decode error")
                 }
@@ -42,15 +47,12 @@ class ViewController: BaseUIViewController {
     }
     
     @objc func buttonAction(sender: UIButton!) {
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RequestViewController") as! RequestViewController
-        vc.dataList = self.jsonData
-        self.navigationController?.pushViewController(vc, animated: true)
+        self.setupData()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setUI()
-        self.setupData()
     }
 
 

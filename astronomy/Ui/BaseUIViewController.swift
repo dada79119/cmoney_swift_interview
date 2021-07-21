@@ -9,13 +9,15 @@ import Foundation
 import UIKit
 
 class BaseUIViewController: UIViewController {
-
+    var isLandscape: Bool = true
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
+        self.isLandscape = UIDevice.current.orientation.isLandscape
     }
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
+        
     }
     
     override func viewDidDisappear(_ animated: Bool) {

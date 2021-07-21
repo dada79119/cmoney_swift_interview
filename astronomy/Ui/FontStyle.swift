@@ -159,6 +159,10 @@ final class FontStyle{
         }
     }
     
+    func getFontSize20Blod()->UIFont{
+        return UIFont(name: fontNameBlod, size: 20)!
+    }
+    
     func getFontSize22Blod()->UIFont{
         return UIFont(name: fontNameBlod, size: 22)!
     }
